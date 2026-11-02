@@ -88,6 +88,9 @@ STORES: Dict[str, Dict[str, object]] = {
     "coop":           {"name": "Coop",            "db_env": "DATABASE_URL_COOP",           "enrich": False, "per_store": True,  "barcode": "inline (VTEX ean)",                    "group": None,     "cron": "5 2,6,10,14,18,22 * * *"},
     "violeta":        {"name": "Violeta Express", "db_env": "DATABASE_URL_VIOLETA",        "enrich": False, "per_store": False, "barcode": "inline (VipCommerce codigo_barras)",   "group": "vipcommerce", "cron": "20 2,6,10,14,18,22 * * *"},
     "bergamini":      {"name": "Hiper Bergamini", "db_env": "DATABASE_URL_BERGAMINI",      "enrich": False, "per_store": False, "barcode": "inline (VipCommerce codigo_barras)",   "group": "vipcommerce", "cron": "35 2,6,10,14,18,22 * * *"},
+    "master":         {"name": "Master Supermercados", "db_env": "DATABASE_URL_MASTER",    "enrich": False, "per_store": False, "barcode": "inline (VipCommerce codigo_barras)",   "group": "vipcommerce", "cron": "20 0,4,8,12,16,20 * * *"},
+    "mambo":          {"name": "Mambo",           "db_env": "DATABASE_URL_MAMBO",          "enrich": False, "per_store": False, "barcode": "inline (VTEX ean)",                    "group": None,     "cron": "50 0,4,8,12,16,20 * * *"},
+    "santaluzia":     {"name": "Casa Santa Luzia", "db_env": "DATABASE_URL_SANTALUZIA",    "enrich": False, "per_store": False, "barcode": "inline (VTEX ean, GTIN-8 allowed)",    "group": None,     "cron": "5 1,5,9,13,17,21 * * *"},
 }
 
 
